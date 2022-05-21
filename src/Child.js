@@ -1,19 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import Child from './Child';
 
-function App() {
-  
-  // let selection = document.getElementById('rootSelect');
-  // let r = selection.selectedIndex;
-  
-  const [root, setRoot] = useState('placeholder')
+function Child(props) {
 
-  return (
-    <div className="floor">
-    <div className="parent">
-        <h1>{root}</h1>
-        {/* <select id="rootSelect">
+    return (
+    <div className="child">
+        <h1>Child.js</h1>
+        <br/>
+        <br/>
+        <select id="rootSelect">
             <option value=" " selected="selected">- Select Root -</option>
             <option value="1">C</option>
             <option value="2">C#</option>
@@ -27,14 +22,14 @@ function App() {
             <option value="10">A</option>
             <option value="11">Bb</option>
             <option value="12">B</option>
-        </select> */}
-        <script type="text/javascript">
-        </script>
-        <Child 
-        changeRoot={root => setRoot(root)}/>
+        </select>
+        <br/>
+        <br/>
+        <button className="btn" onClick={() => props.changeRoot('rootSelect.selectedIndex[].value')}>Send Selection</button>
+        <br/>
+        <br/>
     </div>
-    </div>
-  );
+    );
 }
 
-export default App;
+export default Child;
