@@ -6,14 +6,16 @@ function App() {
   
   // let selection = document.getElementById('rootSelect');
   // let r = selection.selectedIndex;
-  
-  const [root, setRoot] = useState('placeholder')
+  const [root, setRoot] = useState('placeholder');
+
+
 
   return (
     <div className="floor">
     <div className="parent">
         <h1>{root}</h1>
-        {/* <select id="rootSelect">
+        <div id="rootMenu">
+        <select id="rootSelect">
             <option value=" " selected="selected">- Select Root -</option>
             <option value="1">C</option>
             <option value="2">C#</option>
@@ -27,7 +29,8 @@ function App() {
             <option value="10">A</option>
             <option value="11">Bb</option>
             <option value="12">B</option>
-        </select> */}
+        </select>
+        </div> 
         <script type="text/javascript">
         </script>
         <Child 
