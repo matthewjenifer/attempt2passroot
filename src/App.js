@@ -14,7 +14,7 @@ function App() {
     <div className="floor">
     <div className="parent">
         <h1>{root}</h1>
-        <div id="rootMenu">
+        {/* <div id="rootMenu">
         <select id="rootSelect">
             <option value=" " selected="selected">- Select Root -</option>
             <option value="1">C</option>
@@ -30,7 +30,7 @@ function App() {
             <option value="11">Bb</option>
             <option value="12">B</option>
         </select>
-        </div> 
+        </div>  */}
         <script type="text/javascript">
         </script>
         <Child 

@@ -8,7 +8,7 @@ function Child(props) {
         <div className="child">
         <h1>Child.js</h1>
         <br/><br/>
-        {/* <select id="rootSelect">
+        <select id="rootSelect">
             <option value=" " selected="selected">- Select Root -</option>
             <option value="1">C</option>
             <option value="2">C#</option>
@@ -22,9 +22,9 @@ function Child(props) {
             <option value="10">A</option>
             <option value="11">Bb</option>
             <option value="12">B</option>
-        </select> */}
+        </select>
         <br/><br/>
-        <button className="btn" onClick={() => props.changeRoot('this should print menu selection')}>Send Selection</button>
+        <button className="btn" onClick={() => props.changeRoot('should print: rootSelect.selectedIndex[].value')}>Send Selection</button>
         <br/><br/>
     </div>
     );
