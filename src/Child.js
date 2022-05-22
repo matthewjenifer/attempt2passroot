@@ -24,7 +24,7 @@ function Child(props) {
             <option value="12">B</option>
         </select>
         <br/><br/>
-        <button className="btn" onClick={() => props.changeRoot('should print: rootSelect.selectedIndex[].value')}>Send Selection</button>
+        <button className="btn" onClick={() => props.changeRoot('this line should print selected menu value')}>Send Selection</button>
         <br/><br/>
     </div>
     );
