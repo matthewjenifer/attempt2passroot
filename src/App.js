@@ -4,8 +4,6 @@ import Child from './Child';
 
 function App() {
   
-  // let selection = document.getElementById('rootSelect');
-  // let r = selection.selectedIndex;
   const [root, setRoot] = useState('placeholder');
 
 
@@ -17,7 +15,7 @@ function App() {
         <script type="text/javascript">
         </script>
         <Child 
-        changeRoot={root => setRoot(root)}/>
+        setRoot={setRoot}/>
     </div>
     </div>
   );

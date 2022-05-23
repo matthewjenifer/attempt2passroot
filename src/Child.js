@@ -1,33 +1,34 @@
 import React from 'react';
 import './App.css';
 
-function Child(props) {
+function Child({setRoot}) {
 
-// () => props.changeRoot(e.target.value)
     return (
         <div className="child">
         <h1>Child.js</h1>
         <br/><br/>
-        <select id="rootSelect">
+        <select id="rootSelect" onChange={e=> setRoot(e.target.value)}>
             <option value=" " selected="selected">- Select Root -</option>
-            <option value="1">C</option>
-            <option value="2">C#</option>
-            <option value="3">D</option>
-            <option value="4">Eb</option>
-            <option value="5">E</option>
-            <option value="6">F</option>
-            <option value="7">F#</option>
-            <option value="8">G</option>
-            <option value="9">G#</option>
-            <option value="10">A</option>
-            <option value="11">Bb</option>
-            <option value="12">B</option>
+            <option value="C">C</option>
+            <option value="C#">C#</option>
+            <option value="D">D</option>
+            <option value="Eb">Eb</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="F#">F#</option>
+            <option value="G">G</option>
+            <option value="G#">G#</option>
+            <option value="A">A</option>
+            <option value="Bb">Bb</option>
+            <option value="B">B</option>
         </select>
-        <br/><br/>
-        <button className="btn" onClick={() => props.changeRoot('this line should print selected menu value')}>Send Selection</button>
-        <br/><br/>
     </div>
     );
+
+    
+    // function getRoot() {
+    //     props.changeRoot('drop down selection');
+    // }
     
 }
 
