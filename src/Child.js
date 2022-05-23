@@ -26,10 +26,6 @@ function Child({setRoot}) {
     );
 
     
-    // function getRoot() {
-    //     props.changeRoot('drop down selection');
-    // }
-    
 }
 
 export default Child;
